@@ -1,0 +1,137 @@
+.container-banner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner{
+    min-height:450px ;
+    max-height:800px ;
+    object-fit: cover;
+}
+
+.container-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-banner-1{
+color: #D2D3DC;
+}
+.text-banner-2{
+max-width: 956px;
+max-height: 116px;
+}
+.text-banner-3{
+    width: fit-content;
+    max-width: 906px;
+    max-height: 56px;
+}
+
+.section-cards-products{
+    background-color: #F2F4F7;
+}
+
+
+.card-product{
+    width: 348px;
+    height: 406px;
+    padding: 24px 30px 30px;
+}
+
+.footer-card{
+    border: none;
+    background-color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.clients-section{
+    height: 750px;
+    width: auto;
+}
+
+.woman-img{
+    width: fit-content;
+    height: auto;
+    max-width: 570px;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carouselSize{
+max-height: 600px;
+}
+
+.card-carousel{
+    max-width: 162px;
+    max-height: 80px;
+}
+
+/* Pruebas carousel */
+.carouselClients{
+    height: 400px;
+    width:800px ;
+
+}
+.client-img{
+    min-width: 150px;
+    min-height: 80px;
+    
+    background-color: #E9E9E9;
+}
+
+/* #carouselProductIC{
+    height: 400px;
+} */
+
+.carousel-item{
+    object-fit: contain;
+    max-height: 400px ;
+}
+
+#caruselCircule [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 30px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #161414;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;
+}
+
+.request-demo{
+    max-height: 100px;
+}
+
+.test-btn{
+    max-width:255px ;
+    max-height: 55px;
+}
+
+footer{
+    background-color:#F2F4F7 ;
+    height: 80px;
+    
+}
+
+@media screen and (max-width:1023px){
+
+}
+
+@media screen and (max-width:768px){
+
+}
+
+
