@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Open Sans',sans-serif
+}
+
 .container-banner{
     position: relative;
     display: inline-block;
@@ -19,21 +25,45 @@
 
 .text-banner-1{
 color: #D2D3DC;
+font-family: 'Open Sans';
+font-weight: 600;
+font-size: 48px;
+
 }
 .text-banner-2{
 max-width: 956px;
 max-height: 116px;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 18px; text-shadow: .5px 1px 1px #161414;
+
 }
 .text-banner-3{
     width: fit-content;
-    max-width: 906px;
-    max-height: 56px;
+    max-width: 1200px;
+    max-height: auto;
+    font-family: 'Open Sans';
+font-weight: 300;
+font-size: 17px; text-shadow: .5px 1px 1px #161414;
 }
 
 .section-cards-products{
     background-color: #F2F4F7;
 }
 
+.cards-product-title{
+    color: #1D2351;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 32px;
+}
+
+.cards-product-text {
+    color: #353535;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 18px;
+}
 
 .card-product{
     width: 348px;
@@ -41,28 +71,62 @@ max-height: 116px;
     padding: 24px 30px 30px;
 }
 
+.card-title{
+    color: #1D2351;
+font-family: 'Open Sans';
+font-weight: 700;
+font-size: 20px;
+}
+
+.card-text{
+    color: #353535;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 16px;
+}
+
 .footer-card{
     border: none;
     background-color: #FFFFFF;
     text-decoration: underline;
+    text-decoration: none;
+}
+
+.text-body-secondary{
+    color: #3366FF !important;
+    text-decoration: none;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 16px;
+}
+.text-body-secondary:hover{
+    color: #2952CC !important;
 }
 
 .clients-section{
-    height: 750px;
+    min-height: 750px;
     width: auto;
+}
+
+.title-carousel{
+    color: #1D2351;
+font-family: 'Open Sans';
+font-weight: 700;
+font-size: 48px;
 }
 
 .woman-img{
     width: fit-content;
     height: auto;
-    max-width: 570px;
-    max-height: 450px;
+    max-width: 50vw;
+    max-height: 50vh;
     object-fit: cover;
     object-position: center;
 }
 
 .carouselSize{
-max-height: 600px;
+    height: auto;
+min-height: 600px;
 }
 
 .card-carousel{
@@ -70,7 +134,6 @@ max-height: 600px;
     max-height: 80px;
 }
 
-/* Pruebas carousel */
 .carouselClients{
     height: 400px;
     width:800px ;
@@ -83,20 +146,17 @@ max-height: 600px;
     background-color: #E9E9E9;
 }
 
-/* #carouselProductIC{
-    height: 400px;
-} */
-
 .carousel-item{
-    object-fit: contain;
+    object-fit: scale-down;
     max-height: 400px ;
+ 
 }
 
-#caruselCircule [data-bs-target] {
+#carouselCircule [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 10px; /* change width */
-    height: 10px; /* change height */
+    width: 10px; 
+    height: 10px;
     padding: 0;
     margin-right: 30px;
     text-indent: -999px;
@@ -110,28 +170,109 @@ max-height: 600px;
     transition: opacity .6s ease;
     border-radius: 100%;
 }
+#carouselCircule [data-bs-target]:last-child {
+    margin-right: 0px;
+}
+#carouselCircule{
+    max-width: 150px;
+}
 
 .request-demo{
     max-height: 100px;
 }
 
 .test-btn{
-    max-width:255px ;
-    max-height: 55px;
+    width:180px ;
+    height: 55px;
+    border-radius: 4px;
+font-family: 'Open Sans';
+font-weight: 400;
+font-size: 16px;
+    
 }
 
 footer{
     background-color:#F2F4F7 ;
+    color: #353535;
     height: 80px;
+    font-family: 'Open Sans';
+font-weight: 400;
+font-size: 13px;
     
 }
 
-@media screen and (max-width:1023px){
+.links-footer{
+    color: #353535;
+    text-decoration: none;
+}
+.links-footer:hover{
+    color: #0a0a0a;
+    text-decoration: none;
+}
 
+@media screen and (max-width:1023px){
+    .client-img{
+        min-width: 80px;
+        min-height: 80px;
+        
+        background-color: #E9E9E9;
+    }
+    
+
+    .woman-img{
+        max-width: 43vw;
+        max-height: 43vh;
+        
+    }
 }
 
 @media screen and (max-width:768px){
+    
+    .card-product{
+        width: 300px;
+        height: 350px;
+        padding: 0 0 10px 0 ;
+       
+    }
+    
+    .client-img{
+        min-width: 50px;
+        min-height: 50px;
+        
+        background-color: #E9E9E9;
+    }
 
+    .woman-img{
+        max-width: 80vw;
+        max-height: 80vh;
+        
+    }
+
+    .carousel-item{
+        object-fit: scale-down;
+        max-height: 400px ;
+     margin-left: 7%;
+    }
+}
+
+@media screen and (max-width:500px){
+    
+    .container-banner-text{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .carousel-item{
+        object-fit: scale-down;
+        max-height: 400px ;
+     margin-left: 2.7%;
+    }
+
+    .client-img{
+        min-width: 45px;
+        min-height: 45px;
+    }
 }
 
 
